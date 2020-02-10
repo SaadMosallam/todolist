@@ -11,16 +11,29 @@ body{
     outline:none;
     box-shadow:none;
 }
+@media (hover: hover){
+    .btn:active.delete,.btn:hover.delete{
+        color: #e00909;
+    }
+    .btn:active.done,.btn:hover.done{
+        color: #55dd0b;
+    }
+    .btn:active.edit,.btn:hover.edit{
+        color: #ff7300;
+    }
+}
 
-.btn:active.delete,.btn:hover.delete{
-    color: #e00909;
+@media (hover: none){
+    .btn.done{
+        color: #55dd0b;
+    }
+    .btn.edit{
+        color: #ff7300;
+    }
 }
-.btn:active.done,.btn:hover.done{
-    color: #55dd0b;
-}
-.btn:active.edit,.btn:hover.edit{
-    color: #ff7300;
-}
+
+
+
 
 .btn.add{
     background-color: #ff7300;
@@ -34,4 +47,10 @@ li>span{
 .listEntry.done{
     color: #e00909;
     text-decoration: line-through;
+}
+
+@media (max-width: 420px){
+    .display-1{
+        font-size: 4rem;
+    }
 }

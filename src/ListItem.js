@@ -1,6 +1,6 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-import EditModal from './editModal';
+import EditModal from './EditModal';
 
 class ListItem extends React.Component{
     constructor(props){
